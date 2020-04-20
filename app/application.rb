@@ -27,7 +27,7 @@ class Application
 #This should check to see if that item is in @@items and then add it to the cart if it is.
 #Otherwise give an error
     elsif req.path.match(/add/)
-      add_item = req.params["item"]
+      search_term = req.params["item"]
       handle_search(search_term) == "#{search_term} is one of our items"
         @@cart << search_term
         resp.write "added #{search_term}"
