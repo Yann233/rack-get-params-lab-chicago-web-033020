@@ -15,6 +15,8 @@ class Application
     elsif req.path.match(/search/)
       search_term = req.params["q"]
       resp.write handle_search(search_term)
+      Create a new route called /add that takes in a GET param with the key item. This should check to see if that item is in @@items and then add it to the cart if it is. Otherwise give an error
+
     elsif req.path.match(/add/)
       search_term = req.params["item"]
       if handle_search(search_term) == "#{search_term} is one of our items"
