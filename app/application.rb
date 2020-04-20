@@ -22,7 +22,9 @@ class Application
       else
       resp.write "Your cart is empty"
       end
-##################################33
+##################################
+#Create a new route called /add that takes in a GET param with the key item. This should check to see if that item is in @@items and then add it to the cart if it is. Otherwise give an error
+
     elsif req.path.match(/add/)
       add_item = req.params["item"]
       if @@items.include? add_item
