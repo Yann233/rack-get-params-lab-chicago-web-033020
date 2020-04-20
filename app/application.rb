@@ -23,7 +23,7 @@ class Application
       else
         resp.write "We don't have that item"
       end
-      #Create a new route called /cart to show the items in your cart
+  #Create a new route called /cart to show the items in your cart
     elsif req.path.match(/cart/)
       if @@cart.length > 0
         @@cart.each { |item| resp.write "#{item}\n" }
