@@ -1,6 +1,7 @@
 class Application
 
   @@items = ["Apples","Carrots","Pears"]
+  #Create a new class array called @@cart to hold any items in your cart
   @@cart = []
 
   def call(env)
